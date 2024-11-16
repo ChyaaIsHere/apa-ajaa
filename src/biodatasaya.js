@@ -15,11 +15,7 @@ app.listen(PORT, 'localhost', () => {
 
 // Representasi dari database biodata saya
 let biodata = [
-        {id: 1, name: "Rivaldo"},
-        {id: 2, age: "17"},
-        {id: 3, my_address: "Villa Padurenan Indah 3"},
-        {id: 4, social_media: "@chyaa.a30"},
-        {id: 5, telephone: "+6289699601650"},
+        {id: 1, name: "Rivaldo", age:"17",  my_address:"Villa Padurenan Indah 3", social_media: "@chyaa.a30", telephone: "+6289699601650"},
 ];
 
 // Memberikan respon kepada user bahwa request berhasil diterima
@@ -48,7 +44,7 @@ app.post('/biodata', (request, response) => {
     };
 
     biodata.push(biodataBaru); // menambahkan biodata baru ke dalam biodataku
-    response.status(201).json(biodataBaru); // memberikan jawaban ketika berhasil diupdate kedalam json biodataku
+    response.status(200).json(biodataBaru); // memberikan jawaban ketika berhasil diupdate kedalam json biodataku
 });
 
 // meng-update/menambahkan biodata yang sudah ada

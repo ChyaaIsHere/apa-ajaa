@@ -1,0 +1,14 @@
+{
+  "name": "biodata-express-js-kelas-industri",
+  "version": "1.0.0",
+  "main": "biodatasaya.js",
+  "scripts": {
+    "jalankanBiodata" : "node biodatasaya.js"
+  },
+  "author": "Rivaldo",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
